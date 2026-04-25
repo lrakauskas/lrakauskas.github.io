@@ -864,7 +864,7 @@
 <span class="k">await</span><span class="w"> </span><span class="nx">googleAdmobBanner</span><span class="p">.</span><span class="nx">hideBanner</span><span class="p">();</span>
 </code></pre></div>
 <h2 id="show-banner-on-app-start">Show Banner on App Start</h2>
-<p>Banners require some native components to be mounted and obviously you need to keep in mind that PHP side of your app will keep booting fresh on every request. Therefore, it's best to show banner on a landing page's controller. You should always check if the banner is already visible before showing it to avoid unnecessary API calls</p>
+<p>Banners require some native components to be mounted and obviously you need to keep in mind that PHP side of your app will keep booting fresh on every request. Therefore, it's best to show banner on a landing page's controller. You should always check if the banner is already visible before showing it to avoid unnecessary API calls.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
 
 <span class="k">use</span> <span class="nx">lrakauskas\NativephpGoogleAdmob\Enums\BannerPosition</span><span class="p">;</span>
@@ -881,6 +881,7 @@
 
 <span class="p">}</span>
 </code></pre></div>
+<p>If you're using NativePHP's EDGE bottom nav, then you'd want to load the banner <strong>after</strong> the nav is loaded to ensure that banner is positioned correctly above the nav.</p>
 <h2 id="notes">Notes</h2>
 <ul>
 <li>Banner ads can be shown at either the top or bottom of the screen</li>
