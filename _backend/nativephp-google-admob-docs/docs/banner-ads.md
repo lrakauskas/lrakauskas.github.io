@@ -1,5 +1,7 @@
 # Banner Ads
 
+Ensure `ADMOB_BANNER_ENABLED=true` is set in your `.env` file.
+
 Plugin supports anchored adaptive banner ads for top or bottom placement.
 
 ## Typical usage
