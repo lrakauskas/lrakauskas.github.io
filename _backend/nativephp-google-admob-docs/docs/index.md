@@ -2,7 +2,7 @@
 
 Google AdMob integration for NativePHP Mobile with a facade-first PHP API and native event dispatching.
 
-> Currently **supports Android only**. iOS coming soon.
+> Supports Android and iOS.
 
 Plugin is distributed via <a href="https://nativephp.com/plugins/marketplace" target="_blank" rel="noopener">NativePHP's Plugin Marketplace</a>
 
@@ -17,7 +17,7 @@ Plugin is distributed via <a href="https://nativephp.com/plugins/marketplace" ta
 ## Platform scope
 
 - Android - supported
-- iOS - coming soon
+- iOS - supported
 
 ## Recommended reading order
 
