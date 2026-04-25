@@ -40,7 +40,7 @@ await googleAdmobBanner.hideBanner();
 
 ## Show Banner on App Start
 
-Banners require some native components to be mounted and obviously you need to keep in mind that PHP side of your app will keep booting fresh on every request. Therefore, it's best to show banner on a landing page's controller. You should always check if the banner is already visible before showing it to avoid unnecessary API calls
+Banners require some native components to be mounted and obviously you need to keep in mind that PHP side of your app will keep booting fresh on every request. Therefore, it's best to show banner on a landing page's controller. You should always check if the banner is already visible before showing it to avoid unnecessary API calls.
 
 ```php
 <?php
@@ -59,6 +59,8 @@ class MyController extends Controller
 
 }
 ```
+
+If you're using NativePHP's EDGE bottom nav, then you'd want to load the banner **after** the nav is loaded to ensure that banner is positioned correctly above the nav.
 
 ## Notes
 
