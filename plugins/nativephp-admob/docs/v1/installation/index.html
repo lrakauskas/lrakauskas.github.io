@@ -477,45 +477,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-add-a-path-or-private-repository-source" class="md-nav__link">
+  <a href="#1-require-the-package" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Add a path or private repository source
+      1. Require the package
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-require-the-package" class="md-nav__link">
+  <a href="#2-register-the-plugin" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Require the package
+      2. Register the plugin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-register-the-plugin" class="md-nav__link">
+  <a href="#3-publish-config" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Register the plugin
+      3. Publish config
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-publish-config" class="md-nav__link">
+  <a href="#4-optional-add-js-bridge" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Publish config
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-optional-add-js-bridge" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. (optional) Add JS bridge
+      4. (optional) Add JS bridge
     </span>
   </a>
   
@@ -807,45 +798,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-add-a-path-or-private-repository-source" class="md-nav__link">
+  <a href="#1-require-the-package" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Add a path or private repository source
+      1. Require the package
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-require-the-package" class="md-nav__link">
+  <a href="#2-register-the-plugin" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Require the package
+      2. Register the plugin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-register-the-plugin" class="md-nav__link">
+  <a href="#3-publish-config" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Register the plugin
+      3. Publish config
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-publish-config" class="md-nav__link">
+  <a href="#4-optional-add-js-bridge" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Publish config
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-optional-add-js-bridge" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. (optional) Add JS bridge
+      4. (optional) Add JS bridge
     </span>
   </a>
   
@@ -868,34 +850,19 @@
 
 
 <h1 id="installation">Installation</h1>
-<p>Plugin is distributed via <a href="https://nativephp.com/plugins/marketplace" target="_blank" rel="noopener">NativePHP's Plugin Marketplace</a>. You can also install it directly from the package repository if you have access.</p>
+<p>Plugin is distributed via <a href="https://nativephp.com/plugins/marketplace" target="_blank" rel="noopener">NativePHP's Plugin Marketplace</a>.</p>
 <p>Install the package into your NativePHP app and register the plugin provider.</p>
-<h2 id="1-add-a-path-or-private-repository-source">1. Add a path or private repository source</h2>
-<p>For local package development, add a path repository to your app <code>composer.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;repositories&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;path&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;packages/nativephp-google-admob&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;symlink&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>For premium package installs from NativePHP, use the repository access flow you received with purchase.</p>
-<h2 id="2-require-the-package">2. Require the package</h2>
+<h2 id="1-require-the-package">1. Require the package</h2>
 <div class="highlight"><pre><span></span><code>composer<span class="w"> </span>require<span class="w"> </span>lrakauskas/nativephp-google-admob
 </code></pre></div>
-<h2 id="3-register-the-plugin">3. Register the plugin</h2>
+<h2 id="2-register-the-plugin">2. Register the plugin</h2>
 <p>Register the plugin with NativePHP:</p>
 <div class="highlight"><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>native:plugin:register<span class="w"> </span>lrakauskas/nativephp-google-admob
 </code></pre></div>
-<h2 id="4-publish-config">4. Publish config</h2>
+<h2 id="3-publish-config">3. Publish config</h2>
 <div class="highlight"><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>vendor:publish<span class="w"> </span>--tag<span class="o">=</span>nativephp-google-admob-config
 </code></pre></div>
-<h2 id="5-optional-add-js-bridge">5. (optional) Add JS bridge</h2>
+<h2 id="4-optional-add-js-bridge">4. (optional) Add JS bridge</h2>
 <p>If you want to call plugin methods from JS, or want easier way to subscribe to plugin events, add the JS bridge to your <code>package.json</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;imports&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
