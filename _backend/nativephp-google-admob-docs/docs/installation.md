@@ -1,36 +1,16 @@
 # Installation
 
-Plugin is distributed via <a href="https://nativephp.com/plugins/marketplace" target="_blank" rel="noopener">NativePHP's Plugin Marketplace</a>. You can also install it directly from the package repository if you have access.
+Plugin is distributed via <a href="https://nativephp.com/plugins/marketplace" target="_blank" rel="noopener">NativePHP's Plugin Marketplace</a>.
 
 Install the package into your NativePHP app and register the plugin provider.
 
-## 1. Add a path or private repository source
-
-For local package development, add a path repository to your app `composer.json`:
-
-```json
-{
-  "repositories": [
-    {
-      "type": "path",
-      "url": "packages/nativephp-google-admob",
-      "options": {
-        "symlink": true
-      }
-    }
-  ]
-}
-```
-
-For premium package installs from NativePHP, use the repository access flow you received with purchase.
-
-## 2. Require the package
+## 1. Require the package
 
 ```bash
 composer require lrakauskas/nativephp-google-admob
 ```
 
-## 3. Register the plugin
+## 2. Register the plugin
 
 Register the plugin with NativePHP:
 
@@ -38,13 +18,13 @@ Register the plugin with NativePHP:
 php artisan native:plugin:register lrakauskas/nativephp-google-admob
 ```
 
-## 4. Publish config
+## 3. Publish config
 
 ```bash
 php artisan vendor:publish --tag=nativephp-google-admob-config
 ```
 
-## 5. (optional) Add JS bridge
+## 4. (optional) Add JS bridge
 
 If you want to call plugin methods from JS, or want easier way to subscribe to plugin events, add the JS bridge to your `package.json`:
 
